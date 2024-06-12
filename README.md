@@ -8,7 +8,7 @@ This module is useful when developing React Native applications for Zebra mobile
 ### Installation
 
 ```bash
-yarn add https://github.com/DevMcEE/react-native-datawedge-intents.git#master
+yarn add https://github.com/DevMcEE/react-native-datawedge-intents.git#main
 ```
 
 ## Example usage
