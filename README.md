@@ -1,4 +1,4 @@
-This is a forked version
+This is a cleaned and fixed version of [https://github.com/darryncampbell/react-native-datawedge-intents](https://github.com/darryncampbell/react-native-datawedge-intents)
 
 # React-Native-DataWedge-Intents
 React Native Android module to interface with Zebra's DataWedge Intent API
