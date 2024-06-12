@@ -23,8 +23,8 @@
   ],
   "author": "Darryn Campbell",
   "license": "MIT",
-  "repository": "https://github.com/DevMcEE/react-native-datawedge-intents.git",
-  "bugs": "https://github.com/DevMcEE/react-native-datawedge-intents.git",
+  "repository": "https://github.com/devmc-ee/react-native-datawedge-intents.git",
+  "bugs": "https://github.com/devmc-ee/react-native-datawedge-intents.git",
   "peerDependencies": {
     "react-native": ">=0.56"
   }
