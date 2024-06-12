@@ -8,7 +8,7 @@ This module is useful when developing React Native applications for Zebra mobile
 ### Installation
 
 ```bash
-yarn add https://github.com/DevMcEE/react-native-datawedge-intents.git#main
+yarn add https://github.com/devmc-ee/react-native-datawedge-intents.git#semver:^0.1.11
 ```
 
 ## Example usage
@@ -30,6 +30,31 @@ DataWedgeIntents.registerBroadcastReceiver({
       'android.intent.category.DEFAULT'
   ]
 });
+// sample profile in DataWedge
+DataWedgeIntents.sendBroadcastWithExtras({
+  action: "com.symbol.datawedge.api.ACTION",
+    extras: {
+      "SEND_RESULT": true,
+      "com.symbol.datawedge.api.SET_CONFIG": {
+        "PROFILE_NAME": "UniqueProfileName",
+        "PROFILE_ENABLED": "true",
+        "CONFIG_MODE": "CREATE_IF_NOT_EXIST",
+        "PLUGIN_CONFIG": {
+          "PLUGIN_NAME": "INTENT",
+          "RESET_CONFIG": "true",
+          "PARAM_LIST": {
+            "intent_output_enabled": "true",
+            "intent_action": "com.devmcee.app_name.ACTION",
+            "intent_delivery": "2" // Broadcast intent
+          }
+        },
+        "APP_LIST": [{
+          "PACKAGE_NAME": "com.devmcee.app_name",
+          "ACTIVITY_LIST": ["com.devmcee.app_name.MainActivity"]
+        }]
+      }
+    }
+});
 ...
 //  Declare a handler for broadcast intents
 this.broadcastReceiverHandler = (intent) =>
@@ -49,6 +74,9 @@ sendCommand(extraName, extraValue) {
     action: "com.symbol.datawedge.api.ACTION",
     extras: broadcastExtras});
 }
+
+
+...
 ```
 
 ## DataWedge
